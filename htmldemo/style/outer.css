@@ -1,0 +1,9 @@
+#two {
+  background-color: green;
+}
+
+p {
+  color: brown;
+  border: 2px solid black;
+}
+/* 단축 속성 위와 같이 픽셀과 색을 넣는 것을 단축 속성이라고 한다. 섞이면 안되고 순서대로 집어넣어야 한다.*/

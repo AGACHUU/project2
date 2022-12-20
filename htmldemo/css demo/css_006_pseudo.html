@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_006_pseudo.html</title>
+    <!--한번 클릭한 링크는 보라색으로 표시됨 한번도 안누른 링크는 빨간색으로 표시 크롬에서 인터넷 방문기록 삭제하면 다시 리셋됨-->
+    >
+    <style>
+      a:link {
+        color: blue;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: pink;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      /*
+      pseudo class을 작성할떄
+      : link -> : visited -> :hover -> :active 순으로 작성한다.// 외워라 이놈아~
+
+      */
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">
+      w3schools</a
+    >
+  </body>
+</html>

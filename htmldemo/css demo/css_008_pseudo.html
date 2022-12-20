@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_008_pseudo.html</title>
+    <style>
+      p:last-child {
+        background-color: violet;
+      }
+
+      p:first-child {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--p라는 요소가 마지막으로 사용된것 고로 여기에선 마지막<p>가 사용된 세번째 자식구문이 된다/ 퍼스트 차일드 코드는 첫문장이 아니여서 색 적용이 불발된다. -->>
+    <div>
+      <span> div의 span 요소 </span>
+      <p>두번째 자식슨</p>
+      <p>세번쨰자식슨</p>
+    </div>
+  </body>
+</html>

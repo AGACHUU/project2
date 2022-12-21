@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_027_position.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+      .box1 {
+        width: 500px;
+        height: 100px;
+        background-color: greenyellow;
+      }
+
+      .box2 {
+        width: 500px;
+        height: 200px;
+        background-color: yellow;
+        position: relative;
+        /*값이 지정되지 않은 것만 static이다
+        relative는 자기 자신의 위치를 가지고 있음 
+        fixed는 자기 이치를 잃어버림 */
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: relative;
+        left: 200px;
+        top: 0px;
+      }
+
+      .box5 {
+        width: 80px;
+        height: 600px;
+        background-color: coral;
+        right: 10px;
+        top: 50px;
+        position: fixed;
+      }
+
+      .box6 {
+        width: 800px;
+        height: 150px;
+        background-color: paleturquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        포지션(position 속성)
+        1.position은 박스에 대한 배치를 변경 할 때 사용한다.
+        2.position 의 값으로 static, absolute, relative, fixed 등이 있다.
+        3. static :순서에 의한 기본 위치를 지정한다.
+        absolute :부모 요소를 기준으로 위치를 변경한다. (원래의 위치값을 잃는다.)
+        relative : 자기 자신을 기준으로 위치를 변경한다.(원래의 위치값을 가지고 있다.)
+        fixed: 스크린을 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+
+        4.absolute의 위치 지정
+        부모요소의 position 이 static이면 기준점이 body가 된다. 
+        부모요소의 position 이 absolute, fixed, relative이면 기준점이 부모요소이다. 
+    -->
+    <div class="box1"></div>
+    <div class="box2">
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <p>요소들의 위치변경</p>
+    </div>
+    <div class="box5"></div>
+    <div class="box6">
+      미미주주나나메롱나는아가공주삐약삐약 우크라이나 경유 유럽행 러시아
+      가스관서 폭발 우크라이나 경유 유럽행 러시아 가스관서 폭발 러시아에서
+      우크라이나를 거쳐 유럽으로 향하는 가스관에서 폭발이 일어나 사상자가
+      나왔습니다. 외신에 따르면 현지시간 20일 오후 러시아 서부 추바시아 공화국의
+      칼리니노 마을을 지나는 가스관에서 폭발이 일어나 가스 공급이 중단됐습니다.
+      현재 불길은 모두 잡혔지만 3명이 숨지고 1명이 다친 것으로 알려졌습니다.
+      1984년부터 가동된 해당 가스관은 러시아 시베리아 서부에서 중서부 유럽으로
+      가스를 수출하는 주요 통로입니다.
+    </div>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br /><br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br /><br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br /><br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+  </body>
+</html>

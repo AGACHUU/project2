@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_025_imagemenu.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+      body {
+        margin-left: 10px;
+      }
+
+      /*auto 가운데 처리*/
+      body div.wrap {
+        width: 1210px;
+        margin: 10px auto; /*top/bottom right/left   1208인 이유는 클래스가 4개 기본마진갑 2픽셀 */
+        background-color: green;
+        border-left: 2px solid;
+      }
+
+      h1 {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        /*요소의 크기를 벗어ㅅ난 컨텐츠를 지워줌 안전장치*/
+        visibility: hidden;
+        text-indent: -2000px;
+      }
+
+      ul.mainMenu {
+        width: 1210px;
+        height: 104px;
+        list-style: none;
+      }
+
+      ul.mainMenu li {
+        border: 2px solid;
+        float: left;
+        border-left: 0px;
+      }
+
+      ul.mainMenu li a {
+        width: 300px;
+        height: 100px;
+        display: block;
+        font-size: 0;
+      }
+      ul.mainMenu li.mail a {
+        background-image: url(images/mail.gif);
+      }
+      ul.mainMenu li.cafe a {
+        background-image: url(images/cafe.gif);
+      }
+      ul.mainMenu li.blog a {
+        background-image: url(images/blog.gif);
+      }
+      ul.mainMenu li.kin a {
+        background-image: url(images/kin.gif);
+      }
+
+      ul.mainMenu li.mail a:hover {
+        background-position: +300px 0px;
+      }
+      ul.mainMenu li.cafe a:hover {
+        background-position: +300px 0px;
+      }
+
+      ul.mainMenu li.blog a:hover {
+        background-position: +300px 0px;
+      }
+
+      ul.mainMenu li.kin a:hover {
+        background-position: right bottom;
+        /*라이트 바텀이랑 같은거임  +300px 0px*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>메뉴</h1>
+        <nav>
+          <ul class="mainMenu">
+            <li class="mail"><a href="#"> 메일 </a></li>
+            <li class="cafe"><a href="#"> 카페 </a></li>
+            <li class="blog"><a href="#"> 블로그 </a></li>
+            <li class="kin"><a href="#"> 지식인 </a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

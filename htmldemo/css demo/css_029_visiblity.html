@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_029_visiblity.html</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        /* display: none; */
+        /* visibility: hidden ;   디스플레이 :none은 똑같지만 그 자리의 값도같이 사라진다는게 차이점 똑같이 그자리의 자리 값도 사라지게 하려면 width, height 값을 0으로 주면됨.  */
+      }
+    </style>
+  </head>
+  <body>
+    <p>before</p>
+    <div></div>
+    <p>after</p>
+  </body>
+</html>

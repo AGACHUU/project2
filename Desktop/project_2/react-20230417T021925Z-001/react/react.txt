@@ -1,0 +1,5 @@
+vscode에서 리액트 폴더 열기
+터미널 명령어 > src 위치한 곳에서 다음 명령어 차례로 실행
+
+npm install
+npm start
